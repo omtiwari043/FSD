@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .color{
+            background-color: rgb(65, 75, 81);
+        }
+    </style>
+</head>
+<body>
+    <table align="center" height="300px" width="300px" class="color"></>
+        <tr>
+            <td colspan="1">online shop</td>
+        </tr>
+        <tr>
+            <td>TEA</th>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>coffee</th>
+            <td>500</td>
+        </tr>
+        <tr>
+            <td>wheat</th>
+            <td>600</td>
+        </tr>
+        <tr>
+            <td>sugar</th>
+            <td>800</td>
+        </tr>
+        <tr>
+            <td colspan="1"><button onclick="c()">buy now</button></td>
+        </tr>
+        </table>
+       
+        <script>
+               const product={
+                TEA:100,
+                coffee:500,
+                wheat:600,
+                sugar:800
+            }
+               let a,b;
+            function c(){
+                 a=prompt("enter the product name");
+                  b=Number(prompt("enter the product quantity"));
+                const mul=product[a]*b;
+                 document.write("total price is : "+mul);
+            
+
+            }
+            
+             
+         
+            
+            
+        </script>
+        
+        
+        </body>
+</html>
