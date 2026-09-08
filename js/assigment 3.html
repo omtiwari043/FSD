@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .color{
+            background-color: rgb(87, 202, 217);
+        }
+        .color1{
+            background-color: rgb(75, 139, 139);
+        }
+        .color2{
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <div class="color" style="width: 600px; height: 600px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; justify-content: flex-start; box-sizing: border-box; padding: 20px;">
+        <div style="display: flex; align-items: center; gap: 10px; font-size: 24px; font-weight: bold; margin-bottom: 30px;">
+            <img src="bus.webp" alt="bus image" height="50px" width="50px">
+            <span>BUS BOOKING SYSTEM</span>
+        </div>
+
+        <div style="width: 100%;" class="color1">
+            <center><h3>User Information</h3></center>
+        </div>
+        <br>
+        <div>
+            <label for="name">NAME : </label>
+            <input type="text">
+            <br>
+            <br>
+            <label for="age">USER AGE : </label>
+            <input type="number">
+            <br>
+            <br>
+            <label for="adharno.">ADHAAR NO : </label>
+            <input type="text">
+            <br><br>
+            <label for="city">CITY : </label>
+            <select name="city" id="city">
+                <option >select your city</option>
+                <option value="GZB">Ghaziabad</option>
+                <option value="M">MEERUT</option>
+                <option value="A">Aligarh</option>
+                <option value="L">Lucknow</option>
+            </select>
+            <br><br>
+            <label for="journeydate">JOURNEY DATE : </label>
+            <input type="date">
+            <br>
+            <br>
+            
+        </div>
+        <div style="width:100%;"  class="color2">
+            <center>
+                <h3>BUS INFORMATION</h3> 
+            </center>
+        </div>
+        <br>
+        
+        <div>
+            <input type="radio" id="ac" name="bus">
+            <label for="ac">AC BUS $2000</label>
+            <input type="radio" id="nonac" name="bus">
+            <label for="nonac">NON AC BUS $1500</label>
+        </div>
+        <br>
+        <div>
+        <label for="seats">NO OF SEATS : </label>
+        <input type="number" min="1" max="5">
+        </div>
+    </div>
+</body>
+</html>
