@@ -13,6 +13,10 @@
             color: red;
             border: 2px solid red;
         }
+        .color{
+            border: solid;
+            border-color: black;
+        }
     </style>
 </head>
 <body>
@@ -42,12 +46,16 @@
                 data.products.map((i, index) => {
                     row += `
                     <tr>
+                         
                         <td>${index + 1}</td>
-                        <td>${i.title}</td>
+                        <td align="center">${i.title}</td>
                         <td><img src="${i.images[0]}" alt="${i.title}" width="90"></td>
                         <td>${i.category}</td>
                         <td>${i.price}</td>
+                        
                     </tr>
+                     
+                   
                     `;
                 });
                 ele.innerHTML = row;
